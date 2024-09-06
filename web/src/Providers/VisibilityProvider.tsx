@@ -7,6 +7,16 @@ interface VisibilityProviderValue {visible: boolean, setVisible: (visible: boole
 
 const VisibilityProviderContext = createContext<VisibilityProviderValue | null>(null);
 
+/**
+ * `VisibilityProvider` is a component that manages the visibility state of its children.
+ * @param children The content wrapped by the `VisibilityProvider` that will be shown or hidden.
+ * @param component The name of the component that this provider controls.
+ * @example
+ * <VisibilityProvider component='MDTComponent'>
+ *  <MDTComponent/>
+ * </VisibilityProvider>
+**/
+
 export const VisibilityProvider: FC<{children: ReactNode, component: string}> = ({children, component}) => {
   const [visible, setVisible] = useState(false);
   HandleNuiMessage<boolean>(`setVisible${component}`, setVisible);
