@@ -1,4 +1,4 @@
-import {Context, createContext, FC, ReactNode, useContext, useEffect, useState} from 'react';
+import {createContext, FC, ReactNode, useEffect, useState} from 'react';
 import {HandleNuiMessage} from '../Hooks/HandleNuiMessage';
 import {IsRunningInBrowser} from '../Utils/Misc';
 import {TriggerNuiCallback} from '../Utils/TriggerNuiCallback';
@@ -13,8 +13,13 @@ export const VisibilityProvider: FC<{children: ReactNode, component: string}> = 
   useEffect(() => {
     if (visible) {
       const keyHandler = (keyboardEvent: KeyboardEvent) => {
-        if (!['Backspace', 'Escape'].includes(keyboardEvent.code)) return;
-        if (!IsRunningInBrowser()) TriggerNuiCallback('hideComponent', {action: `setVisible${component}`, shouldFocus: true}); else setVisible(false);
+        if (['Backspace', 'Escape'].includes(keyboardEvent.key)) {
+          if (!IsRunningInBrowser()) {
+            TriggerNuiCallback('hideComponent', {action: `setVisible${component}`, data: false});
+          } else {
+            setVisible(false);
+          };
+        };
       };
       window.addEventListener('keydown', keyHandler);
       return () => window.removeEventListener('keydown', keyHandler);
