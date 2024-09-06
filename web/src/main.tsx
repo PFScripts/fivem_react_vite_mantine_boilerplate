@@ -1,13 +1,15 @@
-import '@mantine/core/styles.css';
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import { VisibilityProvider } from './Providers/VisibilityProvider';
+import {createRoot} from 'react-dom/client';
+import {StrictMode} from 'react';
+import {MantineProvider} from '@mantine/core';
+import {VisibilityProvider} from './Providers/VisibilityProvider';
 import {App} from './Components/App';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <VisibilityProvider component='App'>
-      <App/>
-    </VisibilityProvider>
+    <MantineProvider>
+      <VisibilityProvider component='App'>
+        <App/>
+      </VisibilityProvider>
+    </MantineProvider>
   </StrictMode>
 );

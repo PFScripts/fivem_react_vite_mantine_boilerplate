@@ -1,0 +1,4 @@
+---@class NuiMessage
+---@field action string
+---@field data? any 
+---@field shouldFocus? boolean

@@ -14,7 +14,7 @@ export const VisibilityProvider: FC<{children: ReactNode, component: string}> = 
     if (visible) {
       const keyHandler = (keyboardEvent: KeyboardEvent) => {
         if (!['Backspace', 'Escape'].includes(keyboardEvent.code)) return;
-        if (!IsRunningInBrowser()) TriggerNuiCallback('hideComponent', {action: `setVisible${component}`, data: {shouldShow: false}}); else setVisible(false);
+        if (!IsRunningInBrowser()) TriggerNuiCallback('hideComponent', {action: `setVisible${component}`, shouldFocus: true}); else setVisible(false);
       };
       window.addEventListener('keydown', keyHandler);
       return () => window.removeEventListener('keydown', keyHandler);
@@ -28,5 +28,3 @@ export const VisibilityProvider: FC<{children: ReactNode, component: string}> = 
     </VisibilityProviderContext.Provider>
   );
 };
-
-export const UseVisibilityProvider = () => useContext<VisibilityProviderValue>(VisibilityProviderContext as Context<VisibilityProviderValue>);
