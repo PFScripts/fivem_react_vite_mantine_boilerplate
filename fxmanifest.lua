@@ -15,6 +15,6 @@ ui_page 'web/build/index.html'
 
 files {
   'modules/nui.lua',
-  'web/build/index.lua',
+  'web/build/index.html',
   'web/build/**/*'
 }
