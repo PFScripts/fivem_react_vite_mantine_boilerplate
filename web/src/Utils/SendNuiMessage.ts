@@ -5,7 +5,7 @@ interface NuiMessage<T = unknown> {action: string, data: T};
 /**
  * This simulates the SEND_NUI_MESSAGE native.
  * 
- * Only used for developing proposes.
+ * Only used in developing environment.
  * @param messages 
  * @param timeout 
 **/
