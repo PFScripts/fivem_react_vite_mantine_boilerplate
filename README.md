@@ -8,7 +8,7 @@
 
 <div align='center'>
   
-  ![GitHub License](https://img.shields.io/github/license/filipejunqueiro/fivem_react_vite_mantine_boilerplate?label=License&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
+  ![GitHub License](https://img.shields.io/github/license/PFScripts/fivem_react_vite_mantine_boilerplate?label=License&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
   <a href='https://discord.gg/QhMmyx8xsE'>
     ![Discord](https://img.shields.io/discord/1279910494425186446?style=flat&logo=discord&logoColor=%2330b893&label=%E2%80%8E%20&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
   </a>
