@@ -38,11 +38,10 @@ The boilerplate was built `pnpm` but is still compatible with `npm`.
 ## `Features` 
 
 ### `Web`
-
+Scripts
 * (`pnpm` or `npm`) `run dev` – Starts the development server.
 * (`pnpm` or `npm`) `run build` – Builds the project.
 * (`pnpm` or `npm`) `run build:watch` – Builds the project and watches for changes.
 * (`pnpm` or `npm`) `run build:clean` – Deletes the `./build` directory.
-
-
+* 
 ### `Lua` (Lazy at the moment)
