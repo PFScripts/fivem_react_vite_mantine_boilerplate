@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'pf_scripts'
 description 'Basic Lua & (React + Vite + Mantine) boilerplate for FiveM'
-repository 'https://github.com/pf_scripts/fivem_react_vite_mantine_boilerplate'
+repository 'https://github.com/filipejunqueiro/fivem_react_vite_mantine_boilerplate'
 
 shared_script '@ox_lib/init.lua'
 
@@ -15,8 +15,4 @@ server_scripts {'server/*.lua'}
 
 ui_page 'web/build/index.html'
 
-files {
-  'modules/nui.lua',
-  'web/build/index.html',
-  'web/build/**/*'
-}
+files {'modules/nui.lua', 'web/build/index.html', 'web/build/**/*'}
