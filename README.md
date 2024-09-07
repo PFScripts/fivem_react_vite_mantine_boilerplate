@@ -35,4 +35,14 @@ The boilerplate was built `pnpm` but is still compatible with `npm`.
 1. Clone the repository or use the template option and place it within your `resources` folder.
 2. Go to the `web` folder within a terminal of your choice and type `pnpm i` or `npm i`.
 
-## `Features` (Lazy at the moment)
+## `Features` 
+
+### `Web`
+
+* (`pnpm` or `npm`) `run dev` – Starts the development server.
+* (`pnpm` or `npm`) `run build` – Builds the project.
+* (`pnpm` or `npm`) `run build:watch` – Builds the project and watches for changes.
+* (`pnpm` or `npm`) `run build:clean` – Deletes the `./build` directory.
+
+
+### `Lua` (Lazy at the moment)
