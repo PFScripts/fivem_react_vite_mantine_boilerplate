@@ -6,7 +6,7 @@
   This boilerplate provides a modern React setup specifically designed for FiveM development.
 </div>
 
-## `Features`
+## `Information`
 
 * **Fast Build System:** Powered by Vite for quick and efficient development.
 * **UI Library:** Built with Mantine UI to ensure a visually appealing interface.
