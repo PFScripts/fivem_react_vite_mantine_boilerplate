@@ -80,8 +80,8 @@ const [playerData, setPlayerData] = useState<PlayerData>([]);
 
 ```tsx
 // Example:
-// Triggers the `HandleNuiMessage` hook registered with the action `setVisibleApp`.
-// passing `true` as the data payload to control the visibility of the application.
+// Triggers the `HandleNuiMessage` hook registered with the action `setVisibleApp`, passing `true` as the data payload to control the visibility of the application.
+// This stimulates the SEND_NUI_MESSAGE native in the development environment.
 SendNuiMessage([
   {action: 'setVisibleApp', data: true}
 ]);
