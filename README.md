@@ -37,11 +37,50 @@ The boilerplate was built `pnpm` but is still compatible with `npm`.
 
 ## `Features` 
 
-### `Web`
-Scripts
+### `Web | Scripts`
+
 * (`pnpm` or `npm`) `run dev` – Starts the development server.
 * (`pnpm` or `npm`) `run build` – Builds the project.
 * (`pnpm` or `npm`) `run build:watch` – Builds the project and watches for changes.
 * (`pnpm` or `npm`) `run build:clean` – Deletes the `./build` directory.
-* 
-### `Lua` (Lazy at the moment)
+
+### `Web | TriggerNuiCallback`
+
+```tsx
+// Triggers a callback registered with the REGISTER_NUI_CALLBACK native.
+// Example:
+TriggerNuiCallback<any>('getPlayerInfo').then(info => {
+  setPlayerInfo(info);
+});
+```
+
+### `Web | HandleNuiMessage`
+
+```tsx
+// `HandleNuiMessage` is a hook that listens for events sent from the client and invokes a handler when an event with the specified action is received.
+// Example:
+const [playerData, setPlayerData] = useState<PlayerData>([]);
+  HandleNuiMessage<any>('updatePlayerData', (data) => {
+  setPlayerData(data);
+});
+```
+
+### `Web | SendNuiMessage`
+
+```tsx
+// Example:
+// Triggers the `HandleNuiMessage` hook registered with the action `setVisibleApp`.
+// passing `true` as the data payload to control the visibility of the application.
+SendNuiMessage([
+  {action: 'setVisibleApp', data: true}
+]);
+```
+
+### `Lua | handleNuiMessage`
+
+```lua
+-- 1st argument its the message sent by SEND_NUI_MESSAGE native.
+-- 2nd argument sets the SET_NUI_FOCUS native value. 
+-- Example:
+handleNuiMessage({action = 'setVisibleApp', data = true}, true)
+```
