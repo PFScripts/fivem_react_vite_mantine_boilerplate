@@ -23,6 +23,7 @@
 
 ## `Requirements`
 
+- [**ox_lib**](https://github.com/overextended/ox_lib/releases/latest)
 - [**Node > v18.20.4**](https://nodejs.org/en/)
 - [**PNPM (Preferred but not required)**](https://pnpm.io/)
 
