@@ -8,7 +8,7 @@
 
 <div align='center'>
   
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](README.md)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/license/mit)
   <a href='https://discord.gg/QhMmyx8xsE'>
     ![Discord](https://img.shields.io/discord/1279910494425186446?style=flat&logo=discord&logoColor=%2330b893&label=%E2%80%8E%20&labelColor=%E2%80%8E%E2%80%8E&color=%2330b893)
   </a>
