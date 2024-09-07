@@ -44,6 +44,16 @@ The boilerplate was built `pnpm` but is still compatible with `npm`.
 * (`pnpm` or `npm`) `run build:watch` – Builds the project and watches for changes.
 * (`pnpm` or `npm`) `run build:clean` – Deletes the `./build` directory.
 
+### `Web | VisibilityProvider`
+
+```tsx
+// `VisibilityProvider` is a component that manages the visibility state of its children.
+// Example:
+<VisibilityProvider component='MDTComponent'>
+  <MDTComponent/>
+</VisibilityProvider>
+```
+
 ### `Web | TriggerNuiCallback`
 
 ```tsx
