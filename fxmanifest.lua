@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'pf_scripts'
 description 'Basic Lua & (React + Vite + Mantine) boilerplate for FiveM'
-repository 'https://github.com/filipejunqueiro/fivem_react_vite_mantine_boilerplate'
+repository 'https://github.com/PFScripts/fivem_react_vite_mantine_boilerplate'
 
 shared_script '@ox_lib/init.lua'
 
